@@ -1,0 +1,117 @@
+/* CSS Variables */
+:root{
+    --backgroundBlack:rgb(17, 15, 15);
+    --backgroundWhite:rgb(248, 234, 234);
+    --textWhite:white;
+    --textBlack:black;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: fixed;
+    left:90vw;
+    top:5vh;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+    border:2px solid black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px white;
+    background: black;
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: white;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #ff4800d7;
+  }
+
+
+  /* switch toogle classes */
+  .darkBg{
+    background:var(--backgroundBlack);
+  }
+  .lightBg{
+    background: var(--backgroundWhite);
+  }
+  .textWhite{
+    color:var(--textWhite);
+  }
+  .textBlack{
+    color:var(--textBlack);
+  }
+
+  body{
+    background: var(--backgroundWhite);
+  }
+
+  /*    Header-Css-Start    */
+  .logo{
+    position:absolute;
+    left:20px;
+    display:flex;
+    flex-wrap: wrap;
+    width:10vh;
+    height:10vh;
+  }
+
+  .logo-top{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px
+  }
+  .logo-top h1{
+    font-size:40px;
+    color:rgb(233, 175, 68);
+  }
+  .logo-top p{
+    font-size:30px;
+    color:rgb(121, 49, 49);
+  }
+  .logo-bottom{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -33px;
+    margin-left: 26px;
+}
+  
+  
+  /*    Header-Css-End  */
