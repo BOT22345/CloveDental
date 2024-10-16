@@ -1,15 +1,17 @@
 /* CSS Variables */
 :root{
     --backgroundBlack:rgb(17, 15, 15);
-    --backgroundWhite:rgb(248, 234, 234);
+    --backgroundWhite:rgb(250, 239, 239);
     --textWhite:white;
     --textBlack:black;
 }
 
 
 
+
 /* The switch - the box around the slider */
 .switch {
+    z-index: 99;
     font-size: 17px;
     position: fixed;
     left:90vw;
@@ -79,6 +81,8 @@
 
   body{
     background: var(--backgroundWhite);
+    margin: 0px;
+    padding: 0;
   }
 
   /*    Header-Css-Start    */
@@ -86,12 +90,13 @@
     display:flex;
     position: relative;
     /* left:40px; */
-    /* width:100%; */
+    width:100%;
     width:100%;
     justify-content: center;
     /* align-items: center; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height:100px;
+    background: #1f7eeb67;
   }
   .logo{
     position:absolute;
@@ -135,19 +140,100 @@
     display:inline-block;
     font-size:18px;
     position:relative;
-    right:150px;
+    right:50px;
   }
   .nav_1, .nav_2{
     cursor: pointer;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+  }
+  .nav_2 span{
+    font-size:20px;
+      position:relative;
+      bottom:5px;
+  }
+  .nav_1 span {
+    font-size:22px;
+    position:relative;
+    bottom:5px;
+    
   }
   .nav_3{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    gap:20px;
+    position: relative;
+    right:70px;
+  }
+  .nav_3 li{
+    display: flex;
+    gap:20px;
+  }
+  .nav_3 li span{
+    position:relative;
+    bottom:5px;
+    
+    font-size:22px;
   }
   /*    Navgation-End   */
-  .header-icons{
-    height:20px;
-    width:20px;
+  .header-icon1{
+    height:80px;
+    width:80px;
+    border-radius: 100px;
+    /* background-color: white; */
   }
+  .header-icon2{
+    height:30px;
+    width:30px;
+  }
+
+  .navigation-buttons{
+    display:flex;
+    gap:20px;
+    position:relative;
+    right:50px;
+  }
+
+  .book-appointment{
+    height:50px;
+    width:200px;
+    border-radius: 20px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:30px;
+    /* left:10px; */
+    font-size: 16px;
+  }
+  
+  .help-button{
+    height:50px;
+    width:100px;
+    border-radius: 20px;
+    position:relative;
+    top:30px;
+    left:10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    background: transparent;
+  }
+  .help-button-text{
+    display:flex;
+    gap:5px;
+    position: relative;
+    right:10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .help-button-text span{
+    font-size: 22px;
+  }
+
   /*    Header-Css-End  */
